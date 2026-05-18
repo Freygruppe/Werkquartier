@@ -14,21 +14,12 @@ import Impressum from './pages/Impressum'
 function App() {
   return (
     <BrowserRouter>
-      {/* =========================
-         🌑 全局背景层：全屏覆盖，左右都是深灰色背景
-         ========================= */}
       <div className="bg-background text-white min-h-screen w-full overflow-x-hidden">
-        {/* 🌐 版心容器：所有内容都包裹在这里，内部纵向排列 */}
-        <div className="w-full max-w-[1126px] mx-auto min-h-screen flex flex-col ">
-          
-          {/* 🧭 顶部导航 */}
+        <div className="w-full min-h-screen flex flex-col">
           <Navbar />
 
-          {/* =========================
-             📦 页面内容区域
-             ========================= */}
-          <main className="flex-1 pt-20">
-            {/* pt-20 = 给 fixed navbar 留空间 */}
+          {/* pt从28改成24，适配缩小后的导航栏，不会有空隙了 */}
+          <main className="flex-1 pt-24">
             <Routes>
               <Route path="/" element={<Startseite />} />
               <Route path="/projekt" element={<Projekt />} />
@@ -40,7 +31,6 @@ function App() {
             </Routes>
           </main>
 
-          {/* 📍 Footer */}
           <Footer />
         </div>
       </div>

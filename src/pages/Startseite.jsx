@@ -16,27 +16,6 @@ export default function Startseite() {
          ========================================= */}
       <section
 
-        /* -----------------------------------------
-           Tailwind 布局说明：
-
-           relative
-           → 允许内部 absolute 定位
-
-           h-screen
-           → 高度 = 整个屏幕
-
-           flex items-center justify-end
-           → 内容垂直居中 + 靠右
-
-           px-20
-           → 左右留白（高级感关键）
-
-           bg-cover
-           → 背景图铺满
-
-           bg-center
-           → 背景图居中
-           ----------------------------------------- */
         className="
           relative
           h-screen
@@ -47,26 +26,11 @@ export default function Startseite() {
           bg-center
         "
         
-        /* -----------------------------------------
-           设置背景图片
-           ----------------------------------------- */
         style={{
           backgroundImage: `url(${heroImage})`
         }}
       >
 
-        {/* =========================================
-           🌑 黑色遮罩层
-           =========================================
-
-           bg-black/60
-           → 黑色 + 60%透明度
-
-           作用：
-           ✔ 压暗背景
-           ✔ 提升高级感
-           ✔ 保证白字清晰
-        ========================================= */}
         <div className="absolute inset-0 bg-black/60"></div>
 
         {/* =========================================
@@ -74,13 +38,13 @@ export default function Startseite() {
            ========================================= */}
         <div className="relative z-10 px-20 max-w-6xl ml-auto text-right">
 
-          {/* 主标题 */}
-          <h1 className="text-6xl font-serif text-white font-light tracking-wide">
+          {/* 主标题：放大2倍，从原来的60px改成120px，字体不变 */}
+          <h1 className="text-[120px] font-serif text-white font-light tracking-wide">
             WerkQuartier
           </h1>
 
-          {/* 副标题 */}
-          <p className="mt-6 text-gray-300 text-lg leading-relaxed">
+          {/* 副标题：按比例放大2倍，从18px改成36px，间距也同步调整 */}
+          <p className="mt-8 text-gray-300 text-[36px] leading-relaxed">
             Urban Space · Architecture · Future City · Sustainability
           </p>
 
@@ -93,20 +57,17 @@ export default function Startseite() {
          ========================================= */}
       <section className="px-20 py-32">
 
-        {/* 区域标题 */}
-        <h2 className="text-3xl mb-10">
+        {/* 区域标题：加上font-serif，和大字字体统一，大小不变 */}
+        <h2 className="text-3xl mb-10 font-serif text-white">
           Projektidee
         </h2>
 
-        {/* 介绍文字 */}
         <p className="text-gray-300 max-w-3xl leading-relaxed text-lg">
-
           WerkQuartier verbindet moderne Architektur,
           nachhaltige Stadtentwicklung und flexible urbane Räume.
 
           Ziel ist die Schaffung eines lebendigen Quartiers
           mit hoher Aufenthaltsqualität und zukunftsorientiertem Design.
-
         </p>
 
       </section>
@@ -116,19 +77,13 @@ export default function Startseite() {
          ========================================= */}
       <section className="px-20 pb-32">
 
-        {/* 标题 */}
-        <h2 className="text-3xl mb-12">
+        {/* 标题：加上font-serif，和大字字体统一，大小不变 */}
+        <h2 className="text-3xl mb-12 font-serif text-white">
           Schwerpunkte
         </h2>
 
-        {/* -----------------------------------------
-           三列 Grid 布局
-           ----------------------------------------- */}
         <div className="grid grid-cols-3 gap-10">
 
-          {/* =====================================
-             卡片 1
-             ===================================== */}
           <div
             className="
               bg-panel
@@ -139,21 +94,15 @@ export default function Startseite() {
               hover:scale-105
             "
           >
-
             <h3 className="text-xl mb-4">
               Architektur
             </h3>
-
             <p className="text-gray-400 leading-relaxed">
               Moderne und funktionale Baukonzepte
               mit Fokus auf Ästhetik und Nachhaltigkeit.
             </p>
-
           </div>
 
-          {/* =====================================
-             卡片 2
-             ===================================== */}
           <div
             className="
               bg-panel
@@ -164,21 +113,15 @@ export default function Startseite() {
               hover:scale-105
             "
           >
-
             <h3 className="text-xl mb-4">
               Städtebau
             </h3>
-
             <p className="text-gray-400 leading-relaxed">
               Integration in bestehende urbane Strukturen
               und Schaffung neuer öffentlicher Räume.
             </p>
-
           </div>
 
-          {/* =====================================
-             卡片 3
-             ===================================== */}
           <div
             className="
               bg-panel
@@ -189,16 +132,13 @@ export default function Startseite() {
               hover:scale-105
             "
           >
-
             <h3 className="text-xl mb-4">
               Nachhaltigkeit
             </h3>
-
             <p className="text-gray-400 leading-relaxed">
               Energieeffiziente Lösungen und
               verantwortungsvoller Umgang mit Ressourcen.
             </p>
-
           </div>
 
         </div>
