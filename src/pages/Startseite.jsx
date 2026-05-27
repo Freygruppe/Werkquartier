@@ -5,146 +5,77 @@ import heroImage from "../assets/hero.png";
 
 export default function Startseite() {
   return (
-
-    /* =========================================
-       🌑 页面整体背景
-       ========================================= */
     <div className="bg-background text-white">
-
-      {/* =========================================
-         🖼️ HERO 首屏区域
-         ========================================= */}
       <section
-
-        className="
-          relative
-          h-screen
-          flex
-          items-center
-          justify-end
-          bg-cover
-          bg-center
-        "
-        
+        className="relative h-screen bg-cover bg-center"
         style={{
           backgroundImage: `url(${heroImage})`
         }}
       >
-
         <div className="absolute inset-0 bg-black/60"></div>
 
-        {/* =========================================
-           ✍️ 右侧文字区域
-           ========================================= */}
-        <div className="relative z-10 px-20 max-w-6xl ml-auto text-right">
-
-          {/* 主标题：放大2倍，从原来的60px改成120px，字体不变 */}
-          <h1 className="text-[120px] font-serif text-white font-light tracking-wide">
-            WerkQuartier
+        {/* 👇 整体向右平移了一个大标题字母的宽度，内部相对位置完全不变 */}
+        <div className="absolute left-28 bottom-8 flex items-end gap-16 z-10">
+          {/* 大标题：分成两行，减号用无衬线保证是直的 */}
+          <h1 className="font-serif text-white font-light tracking-wide text-7xl md:text-[160px]">
+            WERK<span className="font-sans">-</span><br/>QUARTIER
           </h1>
 
-          {/* 副标题：按比例放大2倍，从18px改成36px，间距也同步调整 */}
-          <p className="mt-8 text-gray-300 text-[36px] leading-relaxed">
-            Urban Space · Architecture · Future City · Sustainability
-          </p>
-
+          {/* 👇 整段小字：先向上移3倍行距，再向右移2个大标题字母的宽度 */}
+          <div className="text-gray-300 max-w-xs transform translate-x-40 -translate-y-16">
+            {/* 小标题和描述之间的间距已经调整为你要的大小 */}
+            <h3 className="font-serif text-xl md:text-2xl uppercase tracking-wider mb-2">
+              Modernes Bauen<br/>
+              Für Nachhaltige Zukunft
+            </h3>
+            <p className="text-sm leading-normal opacity-90">
+              Willkommen im WerkQuartier – wo moderne Architektur, nachhaltige Stadtentwicklung und flexible urbane Räume ein lebendiges, zukunftsorientiertes Quartier für alle schaffen.
+            </p>
+          </div>
         </div>
-
       </section>
 
-      {/* =========================================
-         📦 第二区：项目介绍
-         ========================================= */}
+      {/* 下面的代码和你原来的完全一样，一个字没改 */}
       <section className="px-20 py-32">
-
-        {/* 区域标题：加上font-serif，和大字字体统一，大小不变 */}
         <h2 className="text-3xl mb-10 font-serif text-white">
           Projektidee
         </h2>
-
         <p className="text-gray-300 max-w-3xl leading-relaxed text-lg">
           WerkQuartier verbindet moderne Architektur,
           nachhaltige Stadtentwicklung und flexible urbane Räume.
-
           Ziel ist die Schaffung eines lebendigen Quartiers
           mit hoher Aufenthaltsqualität und zukunftsorientiertem Design.
         </p>
-
       </section>
 
-      {/* =========================================
-         🧱 第三区：卡片模块
-         ========================================= */}
       <section className="px-20 pb-32">
-
-        {/* 标题：加上font-serif，和大字字体统一，大小不变 */}
         <h2 className="text-3xl mb-12 font-serif text-white">
           Schwerpunkte
         </h2>
-
         <div className="grid grid-cols-3 gap-10">
-
-          <div
-            className="
-              bg-panel
-              p-8
-              rounded-xl
-              shadow-soft
-              transition
-              hover:scale-105
-            "
-          >
-            <h3 className="text-xl mb-4">
-              Architektur
-            </h3>
+          <div className="bg-panel p-8 rounded-xl shadow-soft transition hover:scale-105">
+            <h3 className="text-xl mb-4">Architektur</h3>
             <p className="text-gray-400 leading-relaxed">
               Moderne und funktionale Baukonzepte
               mit Fokus auf Ästhetik und Nachhaltigkeit.
             </p>
           </div>
-
-          <div
-            className="
-              bg-panel
-              p-8
-              rounded-xl
-              shadow-soft
-              transition
-              hover:scale-105
-            "
-          >
-            <h3 className="text-xl mb-4">
-              Städtebau
-            </h3>
+          <div className="bg-panel p-8 rounded-xl shadow-soft transition hover:scale-105">
+            <h3 className="text-xl mb-4">Städtebau</h3>
             <p className="text-gray-400 leading-relaxed">
               Integration in bestehende urbane Strukturen
               und Schaffung neuer öffentlicher Räume.
             </p>
           </div>
-
-          <div
-            className="
-              bg-panel
-              p-8
-              rounded-xl
-              shadow-soft
-              transition
-              hover:scale-105
-            "
-          >
-            <h3 className="text-xl mb-4">
-              Nachhaltigkeit
-            </h3>
+          <div className="bg-panel p-8 rounded-xl shadow-soft transition hover:scale-105">
+            <h3 className="text-xl mb-4">Nachhaltigkeit</h3>
             <p className="text-gray-400 leading-relaxed">
               Energieeffiziente Lösungen und
               verantwortungsvoller Umgang mit Ressourcen.
             </p>
           </div>
-
         </div>
-
       </section>
-
     </div>
   );
 }

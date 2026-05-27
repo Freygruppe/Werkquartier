@@ -9,7 +9,6 @@ import Ueber from './pages/Ueber'
 import Termine from './pages/Termine'
 import Kontakt from './pages/Kontakt'
 import Datenschutz from './pages/Datenschutz'
-import Impressum from './pages/Impressum'
 
 function App() {
   return (
@@ -27,7 +26,6 @@ function App() {
               <Route path="/termine" element={<Termine />} />
               <Route path="/kontakt" element={<Kontakt />} />
               <Route path="/datenschutz" element={<Datenschutz />} />
-              <Route path="/impressum" element={<Impressum />} />
             </Routes>
           </main>
 
