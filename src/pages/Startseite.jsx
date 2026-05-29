@@ -14,8 +14,8 @@ export default function Startseite() {
       >
         <div className="absolute inset-0 bg-black/60"></div>
 
-        {/* 👇 整体向右平移了一个大标题字母的宽度，内部相对位置完全不变 */}
-        <div className="absolute left-28 bottom-8 flex items-end gap-16 z-10">
+        {/* 👇 整体向上平移了大标题的一个字母高度（160px，对应大标题的字号），内部相对位置完全不变 */}
+        <div className="absolute left-28 bottom-8 flex items-end gap-16 z-10 -translate-y-40">
           {/* 大标题：分成两行，减号用无衬线保证是直的 */}
           <h1 className="font-serif text-white font-light tracking-wide text-7xl md:text-[160px]">
             WERK<span className="font-sans">-</span><br/>QUARTIER
@@ -29,7 +29,7 @@ export default function Startseite() {
               Für Nachhaltige Zukunft
             </h3>
             <p className="text-sm leading-normal opacity-90">
-              Willkommen im WerkQuartier – wo moderne Architektur, nachhaltige Stadtentwicklung und flexible urbane Räume ein lebendiges, zukunftsorientiertes Quartier für alle schaffen.
+              Willkommen im WerkQuartier – wo moderne Architektur, nachhaltiges Wohnen und gemeinschaftlich gestaltete Lebensräume ein zukunftsorientiertes Zuhause im neuen Stadtquartier schaffen.
             </p>
           </div>
         </div>
