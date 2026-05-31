@@ -1,24 +1,28 @@
 /* =========================================
    🖼️ Datenschutz 页面
    ========================================= */
+import { useTranslation } from 'react-i18next'; // 新增：引入多语言hook
+
 export default function Datenschutz() {
+  const { t } = useTranslation(); // 新增：初始化翻译函数
+
   return (
     <div className="bg-background text-white min-h-screen px-20 py-0">
       <section className="py-16">
         {/* 内容容器：居中，限制最大宽度，两侧留出合理间距 */}
         <div className="max-w-3xl mx-auto">
-          {/* 大标题：保持和其他页面统一的样式，未做修改 */}
+          {/* 大标题：换成多语言 */}
           <h1 className="font-serif text-3xl md:text-4xl font-light tracking-wide text-white uppercase mb-10">
-            Datenschutzerklärung
+            {t('datenschutz.title')}
           </h1>
 
           {/* 1. Verantwortlicher */}
           <div>
-            {/* 小标题：字号再缩小1个等级，从text-lg md:text-xl调整为text-base md:text-lg，无粗体 */}
-            <h2 className="text-base md:text-lg text-white mb-4 mt-8">1. Verantwortlicher</h2>
-            {/* 正文：保持之前调整后的小字号 */}
+            <h2 className="text-base md:text-lg text-white mb-4 mt-8">
+              {t('datenschutz.section1_title')}
+            </h2>
             <p className="text-gray-300 leading-relaxed text-sm mb-4">
-              Verantwortlich für diese Website im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:
+              {t('datenschutz.section1_p1')}
             </p>
             <p className="text-gray-300 leading-relaxed text-sm">
               Werkquartier Baugruppe<br/>
@@ -31,15 +35,17 @@ export default function Datenschutz() {
 
           {/* 2. Allgemeine Hinweise zur Datenverarbeitung */}
           <div>
-            <h2 className="text-base md:text-lg text-white mb-4 mt-8">2. Allgemeine Hinweise zur Datenverarbeitung</h2>
+            <h2 className="text-base md:text-lg text-white mb-4 mt-8">
+              {t('datenschutz.section2_title')}
+            </h2>
             <p className="text-gray-300 leading-relaxed text-sm mb-4">
-              Der Schutz Ihrer persönlichen Daten ist uns wichtig. Personenbezogene Daten werden auf dieser Website nur im technisch notwendigen Umfang verarbeitet.
+              {t('datenschutz.section2_p1')}
             </p>
             <p className="text-gray-300 leading-relaxed text-sm mb-4">
-              Diese Website dient ausschließlich der allgemeinen Information über das Projekt „WerkQuartier“.
+              {t('datenschutz.section2_p2')}
             </p>
             <p className="text-gray-300 leading-relaxed text-sm">
-              Es werden keine Benutzerkonten angelegt, keine Newsletter angeboten und keine personenbezogenen Daten aktiv über Formulare erhoben oder gespeichert.
+              {t('datenschutz.section2_p3')}
             </p>
           </div>
 
@@ -47,23 +53,25 @@ export default function Datenschutz() {
 
           {/* 3. Hosting und Server-Logfiles */}
           <div>
-            <h2 className="text-base md:text-lg text-white mb-4 mt-8">3. Hosting und Server-Logfiles</h2>
+            <h2 className="text-base md:text-lg text-white mb-4 mt-8">
+              {t('datenschutz.section3_title')}
+            </h2>
             <p className="text-gray-300 leading-relaxed text-sm mb-4">
-              Beim Besuch dieser Website werden durch den Hosting-Anbieter automatisch technische Informationen erfasst und temporär in sogenannten Server-Logfiles gespeichert. Dies umfasst insbesondere:
+              {t('datenschutz.section3_p1')}
             </p>
             <ul className="text-gray-300 leading-relaxed text-sm pl-5 space-y-1 mb-4">
-              <li>IP-Adresse</li>
-              <li>Datum und Uhrzeit des Zugriffs</li>
-              <li>aufgerufene Seiten</li>
-              <li>Browsertyp und Browserversion</li>
-              <li>Betriebssystem</li>
-              <li>Referrer-URL</li>
+              <li>{t('datenschutz.section3_li1')}</li>
+              <li>{t('datenschutz.section3_li2')}</li>
+              <li>{t('datenschutz.section3_li3')}</li>
+              <li>{t('datenschutz.section3_li4')}</li>
+              <li>{t('datenschutz.section3_li5')}</li>
+              <li>{t('datenschutz.section3_li6')}</li>
             </ul>
             <p className="text-gray-300 leading-relaxed text-sm mb-4">
-              Die Verarbeitung erfolgt zur Gewährleistung der technischen Sicherheit und Stabilität der Website.
+              {t('datenschutz.section3_p2')}
             </p>
             <p className="text-gray-300 leading-relaxed text-sm">
-              Eine Zusammenführung dieser Daten mit anderen Datenquellen erfolgt nicht.
+              {t('datenschutz.section3_p3')}
             </p>
           </div>
 
@@ -71,15 +79,17 @@ export default function Datenschutz() {
 
           {/* 4. Kontaktaufnahme per E-Mail */}
           <div>
-            <h2 className="text-base md:text-lg text-white mb-4 mt-8">4. Kontaktaufnahme per E-Mail</h2>
+            <h2 className="text-base md:text-lg text-white mb-4 mt-8">
+              {t('datenschutz.section4_title')}
+            </h2>
             <p className="text-gray-300 leading-relaxed text-sm mb-4">
-              Auf dieser Website besteht die Möglichkeit, über einen E-Mail-Link Kontakt aufzunehmen.
+              {t('datenschutz.section4_p1')}
             </p>
             <p className="text-gray-300 leading-relaxed text-sm">
-              Wenn Sie uns per E-Mail kontaktieren, werden die von Ihnen übermittelten personenbezogenen Daten (z. B. Name, E-Mail-Adresse und Inhalt der Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage verwendet.
+              {t('datenschutz.section4_p2')}
             </p>
             <p className="text-gray-300 leading-relaxed text-sm">
-              Eine Weitergabe an Dritte erfolgt nicht.
+              {t('datenschutz.section4_p3')}
             </p>
           </div>
 
@@ -87,9 +97,11 @@ export default function Datenschutz() {
 
           {/* 5. SSL- bzw. TLS-Verschlüsselung */}
           <div>
-            <h2 className="text-base md:text-lg text-white mb-4 mt-8">5. SSL- bzw. TLS-Verschlüsselung</h2>
+            <h2 className="text-base md:text-lg text-white mb-4 mt-8">
+              {t('datenschutz.section5_title')}
+            </h2>
             <p className="text-gray-300 leading-relaxed text-sm">
-              Diese Website verwendet aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung. Dadurch können übertragene Inhalte nicht von Dritten mitgelesen werden.
+              {t('datenschutz.section5_p1')}
             </p>
           </div>
 
@@ -97,20 +109,22 @@ export default function Datenschutz() {
 
           {/* 6. Ihre Rechte */}
           <div>
-            <h2 className="text-base md:text-lg text-white mb-4 mt-8">6. Ihre Rechte</h2>
+            <h2 className="text-base md:text-lg text-white mb-4 mt-8">
+              {t('datenschutz.section6_title')}
+            </h2>
             <p className="text-gray-300 leading-relaxed text-sm mb-4">
-              Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf:
+              {t('datenschutz.section6_p1')}
             </p>
             <ul className="text-gray-300 leading-relaxed text-sm pl-5 space-y-1 mb-4">
-              <li>Auskunft über Ihre gespeicherten Daten</li>
-              <li>Berichtigung unrichtiger Daten</li>
-              <li>Löschung Ihrer Daten</li>
-              <li>Einschränkung der Verarbeitung</li>
-              <li>Widerspruch gegen die Verarbeitung</li>
-              <li>Datenübertragbarkeit</li>
+              <li>{t('datenschutz.section6_li1')}</li>
+              <li>{t('datenschutz.section6_li2')}</li>
+              <li>{t('datenschutz.section6_li3')}</li>
+              <li>{t('datenschutz.section6_li4')}</li>
+              <li>{t('datenschutz.section6_li5')}</li>
+              <li>{t('datenschutz.section6_li6')}</li>
             </ul>
             <p className="text-gray-300 leading-relaxed text-sm">
-              Außerdem steht Ihnen ein Beschwerderecht bei der zuständigen Datenschutzaufsichtsbehörde zu.
+              {t('datenschutz.section6_p2')}
             </p>
           </div>
 
@@ -118,9 +132,11 @@ export default function Datenschutz() {
 
           {/* 7. Änderungen dieser Datenschutzerklärung */}
           <div>
-            <h2 className="text-base md:text-lg text-white mb-4 mt-8">7. Änderungen dieser Datenschutzerklärung</h2>
+            <h2 className="text-base md:text-lg text-white mb-4 mt-8">
+              {t('datenschutz.section7_title')}
+            </h2>
             <p className="text-gray-300 leading-relaxed text-sm">
-              Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen, damit sie den aktuellen rechtlichen Anforderungen entspricht.
+              {t('datenschutz.section7_p1')}
             </p>
           </div>
         </div>

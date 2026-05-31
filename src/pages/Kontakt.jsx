@@ -2,9 +2,12 @@
    🖼️ 导入图片和React状态
    ========================================= */
 import { useState } from "react";
+import { useTranslation } from 'react-i18next'; // 新增：引入多语言hook
 import kontakt01 from "../assets/Kontakt-01.png";
 
 export default function Kontakt() {
+  const { t } = useTranslation(); // 新增：初始化翻译函数
+
   // 表单状态管理：移除了unternehmen字段
   const [formData, setFormData] = useState({
     vorname: "",
@@ -24,17 +27,17 @@ export default function Kontakt() {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // 构造邮件内容：移除了Unternehmen相关行
-    const subject = "Kontaktanfrage von WerkQuartier Website";
+    // 构造邮件内容：所有文本都换成了多语言，跟着界面语言自动变
+    const subject = t('kontakt.mail_subject');
     const body = `
-Neue Kontaktanfrage:
+${t('kontakt.mail_new')}
 
-Vorname: ${formData.vorname}
-Nachname: ${formData.nachname}
-E-Mail: ${formData.email}
-Telefon: ${formData.telefon || "-"}
+${t('kontakt.vorname')}: ${formData.vorname}
+${t('kontakt.nachname')}: ${formData.nachname}
+${t('kontakt.email')}: ${formData.email}
+${t('kontakt.telefon')}: ${formData.telefon || "-"}
 
-Nachricht:
+${t('kontakt.mail_nachricht')}:
 ${formData.nachricht}
     `.trim();
 
@@ -53,17 +56,19 @@ ${formData.nachricht}
         <div className="w-1/2 py-10 flex flex-col items-center">
           {/* 表单内容容器：宽度缩短为左半区域的80%，并在左半区域内水平居中 */}
           <div className="w-4/5">
-            {/* 标题：字号缩小2个等级，从text-5xl md:text-6xl调整为text-3xl md:text-4xl */}
+            {/* 标题：换成多语言 */}
             <h2 className="font-serif text-3xl md:text-4xl font-light tracking-wide text-white uppercase mb-10">
-              Kontakt aufnehmen
+              {t('kontakt.title')}
             </h2>
 
             {/* 表单 */}
             <form onSubmit={handleSubmit} className="space-y-6">
-              {/* 第一行：Vorname 和 Nachname */}
+              {/* 第一行：Vorname 和 Nachname，label换成多语言 */}
               <div className="flex gap-4">
                 <div className="w-1/2">
-                  <label className="block text-sm text-gray-300 mb-2">Vorname</label>
+                  <label className="block text-sm text-gray-300 mb-2">
+                    {t('kontakt.vorname')}
+                  </label>
                   <input
                     type="text"
                     name="vorname"
@@ -74,7 +79,9 @@ ${formData.nachricht}
                   />
                 </div>
                 <div className="w-1/2">
-                  <label className="block text-sm text-gray-300 mb-2">Nachname</label>
+                  <label className="block text-sm text-gray-300 mb-2">
+                    {t('kontakt.nachname')}
+                  </label>
                   <input
                     type="text"
                     name="nachname"
@@ -86,9 +93,11 @@ ${formData.nachricht}
                 </div>
               </div>
 
-              {/* E-Mail */}
+              {/* E-Mail，label换成多语言 */}
               <div>
-                <label className="block text-sm text-gray-300 mb-2">E-Mail Adresse</label>
+                <label className="block text-sm text-gray-300 mb-2">
+                  {t('kontakt.email')}
+                </label>
                 <input
                   type="email"
                   name="email"
@@ -99,11 +108,15 @@ ${formData.nachricht}
                 />
               </div>
 
-              {/* Telefon */}
+              {/* Telefon，label和Optional都换成多语言 */}
               <div>
                 <div className="flex justify-between items-center mb-2">
-                  <label className="block text-sm text-gray-300">Telefon</label>
-                  <span className="text-xs text-gray-500">Optional</span>
+                  <label className="block text-sm text-gray-300">
+                    {t('kontakt.telefon')}
+                  </label>
+                  <span className="text-xs text-gray-500">
+                    {t('kontakt.optional')}
+                  </span>
                 </div>
                 <input
                   type="tel"
@@ -114,9 +127,11 @@ ${formData.nachricht}
                 />
               </div>
 
-              {/* Nachricht */}
+              {/* Nachricht，label换成多语言 */}
               <div>
-                <label className="block text-sm text-gray-300 mb-2">Nachricht</label>
+                <label className="block text-sm text-gray-300 mb-2">
+                  {t('kontakt.nachricht')}
+                </label>
                 <textarea
                   name="nachricht"
                   value={formData.nachricht}
@@ -127,22 +142,22 @@ ${formData.nachricht}
                 />
               </div>
 
-              {/* 提交按钮：和参考图一样的绿色样式，匹配我们网站的主题色 */}
+              {/* 提交按钮：文本换成多语言 */}
               <button
                 type="submit"
                 className="bg-[#4a5d54] hover:bg-[#3a4d44] text-white px-8 py-3 rounded transition-colors font-medium"
               >
-                Abschicken
+                {t('kontakt.submit')}
               </button>
             </form>
           </div>
         </div>
 
-        {/* 右边的图片：保持1/2页面宽度，高度撑满整个section，实现顶部对齐导航栏、底部对齐footer */}
+        {/* 右边的图片：alt换成多语言 */}
         <div className="absolute top-0 right-0 w-1/2 h-full">
           <img 
             src={kontakt01} 
-            alt="Kontakt Büro" 
+            alt={t('kontakt.alt_buro')} 
             className="w-full h-full object-cover" 
           />
         </div>
