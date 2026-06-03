@@ -9,6 +9,7 @@ import Ueber from './pages/Ueber'
 import Termine from './pages/Termine'
 import Kontakt from './pages/Kontakt'
 import Datenschutz from './pages/Datenschutz'
+import Impressum from './pages/Impressum' // 新增：导入Impressum页面组件
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/termine" element={<Termine />} />
             <Route path="/kontakt" element={<Kontakt />} />
             <Route path="/datenschutz" element={<Datenschutz />} />
+            <Route path="/impressum" element={<Impressum />} /> // 新增：添加Impressum路由规则
           </Routes>
         </main>
 

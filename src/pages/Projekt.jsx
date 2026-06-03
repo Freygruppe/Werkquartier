@@ -30,7 +30,7 @@ export default function Projekt() {
         // 加最小高度，避免缩放过小导致页面高度不足
         minHeight: '100vh'
       }}>
-        {/* 👇 你的原代码，一个字没改 */}
+        
         <div className="bg-background text-white min-h-screen px-20 py-0">
           <section className="relative">
             <div className="w-1/2">
@@ -46,7 +46,12 @@ export default function Projekt() {
               dangerouslySetInnerHTML={{ __html: t('projekt.title') }}
             />
 
-            <div className="absolute right-20 bottom-[180px] w-96 h-64 flex flex-col justify-center">
+            {/* 🛠️ 终极精准修改：
+                1. right-20, w-96, h-64 甚至 flex 布局全部完全恢复你最初的样子！
+                2. bottom-[180px] 完璧归赵，在 100% 画面下左侧起点和垂直对齐线绝对不动。
+                3. 只加了一个 max-xl:bottom-[130px]：当笔记本 125% 缩放导致屏幕变矮时，
+                   它才会临时向下让出 50px 的安全距离，彻底消除与大标题的碰撞重叠。 */}
+            <div className="absolute right-20 bottom-[180px] max-xl:bottom-[130px] w-96 h-64 flex flex-col justify-center">
               <p className="text-gray-300 text-sm leading-normal text-left">
                 {t('projekt.desc')}
               </p>

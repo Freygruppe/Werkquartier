@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
-import { useTranslation } from 'react-i18next' // 新增：引入多语言hook
+import { useTranslation } from 'react-i18next' // 这里修正了包名，之前误写成了react-language
 
 export default function Footer() {
-  const { t } = useTranslation() // 新增：初始化翻译函数
+  const { t } = useTranslation() // 初始化翻译函数
 
   return (
     <footer className="flex items-center justify-center px-6 py-6 bg-[#4a5d54] text-white">
@@ -18,6 +18,9 @@ export default function Footer() {
           </Link>
           <Link to="/datenschutz" className="text-sm font-bold hover:underline">
             {t('footer.datenschutz')}
+          </Link>
+          <Link to="/impressum" className="text-sm font-bold hover:underline">
+            {t('footer.impressum')}
           </Link>
         </div>
       </div>

@@ -12,31 +12,46 @@
     "paragraph1": "WerkQuartier is a building group consisting of architects, specialist planners and committed people with a shared understanding of sustainable and responsible living. For the new Dietenbach urban quarter, we are applying for a plot of land to jointly develop a multi-family house that consistently pursues the quarter's guiding principles – social, ecological and sustainable. Our goal is to design high-quality living space that combines modern architecture with social interaction and long-term environmental responsibility.",
     "paragraph2": "Based on our professional backgrounds and interdisciplinary experience, we place particular emphasis on future-oriented planning and energy concepts. These include resource-saving construction methods, the use of sustainable materials, energy-efficient building technology and the integration of renewable energies. At the same time, we understand architecture not only as built space, but also as a contribution to a liveable, open and intergenerational neighbourhood with high social and ecological quality."
   },
-  "footer": {
-    "copyright": "© 2026 Werkquartier Building Group Freiburg",
-    "kontakt": "Contact",
-    "datenschutz": "Privacy Policy"
-  }
-  ,
+"footer": {
+  "copyright": "© 2026 Werkquartier Building Group Freiburg",
+  "kontakt": "Contact",
+  "datenschutz": "Privacy Policy",
+  "impressum": "Imprint"
+}  ,
+  "impressum": {
+  "title": "Imprint",
+  "section1_title": "Information according to § 5 TMG",
+  "section1_content": "Baugruppe Werkquartier (Initiative in formation)<br/>Freiburg im Breisgau, Germany",
+  "section2_title": "Contact",
+  "section2_content": "E-Mail: info@werkquartier-dietenbach.de",
+  "section3_title": "Responsible for the content",
+  "section3_content": "Baugruppe Werkquartier Initiative<br/>(Contact via the e-mail address mentioned above)",
+  "section4_title": "Liability for contents",
+  "section4_content": "As a service provider, we are responsible for our own content on these pages in accordance with § 7 Para.1 TMG according to the general laws. However, liability for the correctness, completeness and up-to-dateness of the content is excluded within the scope of the project phase.",
+  "section5_title": "EU dispute resolution",
+  "section5_content": "The European Commission provides a platform for online dispute resolution (OS):<br/><a href='https://ec.europa.eu/consumers/odr/' target='_blank' rel='noopener noreferrer' class='text-green-500 hover:underline'>https://ec.europa.eu/consumers/odr/</a>",
+  "section6_title": "Note",
+  "section6_content": "This project is in the founding and concept phase. Content and information may change in the future."
+},
 "start": {
   "subtitle": "Modern Construction<br/>For a Sustainable Future",
   "desc": "Welcome to WerkQuartier – where modern architecture, sustainable living and co-designed living spaces create a future-oriented home in the new urban quarter.",
   "projektidee_title": "Project Idea",
-  "projektidee_desc": "WerkQuartier combines modern architecture, sustainable urban development and flexible urban spaces. The goal is to create a lively quarter with high quality of stay and future-oriented design.",
+  "projektidee_desc": "WerkQuartier represents a Baugruppe initiative that brings together contemporary architecture, sustainable construction, and flexible urban living concepts within a concrete development project.\nAs part of the emerging Dietenbach urban district, we are realising a multi-family residential building that functions as an independent architectural component within a diverse and vibrant neighbourhood.\nRather than being understood solely as a residential structure, our project aims to contribute as a high-quality architectural piece and potential catalyst for a forward-looking urban development with strong spatial quality and a high standard of design.",
   "schwerpunkte_title": "Focus Areas",
-  "architektur_title": "Architecture",
-  "architektur_desc": "Modern and functional building concepts with a focus on aesthetics and sustainability.",
-  "staedtebau_title": "Urban Development",
-  "staedtebau_desc": "Integration into existing urban structures and creation of new public spaces.",
-  "nachhaltigkeit_title": "Sustainability",
-  "nachhaltigkeit_desc": "Energy-efficient solutions and responsible use of resources."
+  "architektur_title": "Collective Building – collaborative, flexible, self-determined",
+  "architektur_desc": "WerkQuartier is developed as a Baugruppe in which future residents actively participate in the design process. This creates flexible living and working structures that adapt to different lifestyles and needs.",
+  "staedtebau_title": "Neighborhood Integration – embedded in Dietenbach’s urban vision",
+  "staedtebau_desc": "The project is part of Freiburg’s new urban district development in Dietenbach. It promotes open neighborhood structures, permeable spaces, and a strong connection to the surrounding public realm.",
+  "nachhaltigkeit_title": "Sustainable Urban Living – resource-efficient and future-oriented",
+  "nachhaltigkeit_desc": "In alignment with Dietenbach’s ecological goals, WerkQuartier focuses on energy-efficient construction methods, durable materials, and a reduced footprint in land use and resource consumption."
 }
 ,
 "projekt": {
   "title": "A Vision for<br/>Inspired<br/>Living",
-  "desc": "Welcome to the Grünwerk project – we are developing a modern residential quarter that combines comfort, sustainability and quality of life. Our focus is on creating spaces that are not only beautiful, but also offer a home where you can feel completely at ease.",
+  "desc": "WerkQuartier is applying as a building group for a site within the first development phase of Freiburg’s new Dietenbach district (Frohnholz, Plot Cluster 1). The current plan is to develop a multi-family residential building with approximately 12 to 16 owner-occupied apartments. The project is currently in the preparation and application phase. Together, we are working on the conceptual foundations for a future residential project in the new Dietenbach urban district.",
   "bau_title": "1.<br/>Construction<br/>Phase",
-  "bau_desc": "We are currently working on the first construction phase. Here we are realizing the first residential buildings, which combine modern architecture, energy-efficient technology and high-quality equipment. This phase lays the foundation for the entire quarter and will be completed soon.",
+  "bau_desc": "As part of the development of the new Dietenbach district, the project is understood as a contribution to a diverse and future-oriented urban neighborhood. The focus lies on a contemporary architectural approach, sustainable construction methods, and flexible, community-oriented forms of living.",
   "alt_vision": "Project Vision",
   "alt_bau": "Construction Phase",
   "alt_plan": "Construction Plan"
@@ -49,6 +64,7 @@
   "telefon": "Phone",
   "optional": "Optional",
   "nachricht": "Message",
+  "privacy_notice": "By clicking \"Send\" below, you agree that Werkquartier Baugruppe stores and processes the personal data you provided above to process your request.",
   "submit": "Send",
   "mail_subject": "Contact Request from WerkQuartier Website",
   "mail_new": "New Contact Request:",

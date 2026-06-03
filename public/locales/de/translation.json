@@ -12,31 +12,47 @@
     "paragraph1": "WerkQuartier ist eine Baugruppe aus Architekt:innen, Fachplaner:innen und engagierten Menschen mit einem gemeinsamen Verständnis für nachhaltiges und verantwortungsbewusstes Wohnen. Für das neue Stadtquartier Dietenbach bewerben wir uns um ein Grundstück, um dort gemeinsam ein Mehrfamilienhaus zu entwickeln, das die Leitgedanken des Quartiers – sozial, ökologisch und nachhaltig – konsequent weiterführt. Unser Ziel ist es, qualitätsvollen Wohnraum zu entwerfen, der moderne Architektur mit sozialem Miteinander und langfristiger Umweltverantwortung verbindet.",
     "paragraph2": "Durch unsere fachlichen Hintergründe und interdisziplinären Erfahrungen legen wir besonderen Wert auf zukunftsfähige Planungs- und Energiekonzepte. Dazu gehören ressourcenschonende Bauweisen, der Einsatz nachhaltiger Materialien, energieeffiziente Gebäudetechnik sowie die Integration erneuerbarer Energien. Gleichzeitig verstehen wir Architektur nicht nur als gebauten Raum, sondern als Beitrag zu einer lebenswerten, offenen und generationenübergreifenden Nachbarschaft mit hoher sozialer und ökologischer Qualität."
   },
-  "footer": {
-    "copyright": "© 2026 Werkquartier Baugruppe Freiburg",
-    "kontakt": "Kontakt",
-    "datenschutz": "Datenschutz"
-  }
+"footer": {
+  "copyright": "© 2026 Werkquartier Baugruppe Freiburg",
+  "kontakt": "Kontakt",
+  "datenschutz": "Datenschutz",
+  "impressum": "Impressum"
+},
+"impressum": {
+  "title": "Impressum",
+  "section1_title": "Angaben gemäß § 5 TMG",
+  "section1_content": "Baugruppe Werkquartier (Initiative in Gründung)<br/>Freiburg im Breisgau, Deutschland",
+  "section2_title": "Kontakt",
+  "section2_content": "E-Mail: info@werkquartier-dietenbach.de",
+  "section3_title": "Verantwortlich für den Inhalt",
+  "section3_content": "Baugruppe Werkquartier Initiative<br/>(Kontakt über oben genannte E-Mail-Adresse)",
+  "section4_title": "Haftung für Inhalte",
+  "section4_content": "Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Eine Haftung für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird jedoch im Rahmen der Projektphase ausgeschlossen.",
+  "section5_title": "EU-Streitschlichtung",
+  "section5_content": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:<br/><a href='https://ec.europa.eu/consumers/odr/' target='_blank' rel='noopener noreferrer' class='text-green-500 hover:underline'>https://ec.europa.eu/consumers/odr/</a>",
+  "section6_title": "Hinweis",
+  "section6_content": "Dieses Projekt befindet sich in der Gründungs- und Konzeptphase. Inhalte und Angaben können sich zukünftig ändern."
+}
   ,
 "start": {
   "subtitle": "Modernes Bauen<br/>Für Nachhaltige Zukunft",
   "desc": "Willkommen im WerkQuartier – wo moderne Architektur, nachhaltiges Wohnen und gemeinschaftlich gestaltete Lebensräume ein zukunftsorientiertes Zuhause im neuen Stadtquartier schaffen.",
   "projektidee_title": "Projektidee",
-  "projektidee_desc": "WerkQuartier verbindet moderne Architektur, nachhaltige Stadtentwicklung und flexible urbane Räume. Ziel ist die Schaffung eines lebendigen Quartiers mit hoher Aufenthaltsqualität und zukunftsorientiertem Design.",
+  "projektidee_desc": "WerkQuartier steht für eine Baugruppe, die moderne Architektur, nachhaltiges Bauen und flexible urbane Wohnformen in einem konkreten Bauprojekt vereint.\nIm Rahmen der Entwicklung des neuen Stadtquartiers Dietenbach realisieren wir ein Mehrfamilienhaus, das als eigenständiger Baustein Teil eines lebendigen und vielfältigen Quartiers wird.\nUnser Projekt versteht sich dabei nicht nur als Wohngebäude, sondern als qualitätsvoller Beitrag und möglicher Impulsgeber für eine zukunftsorientierte Quartiersentwicklung mit hoher Aufenthaltsqualität und gestalterischem Anspruch.",
   "schwerpunkte_title": "Schwerpunkte",
-  "architektur_title": "Architektur",
-  "architektur_desc": "Moderne und funktionale Baukonzepte mit Fokus auf Ästhetik und Nachhaltigkeit.",
-  "staedtebau_title": "Städtebau",
-  "staedtebau_desc": "Integration in bestehende urbane Strukturen und Schaffung neuer öffentlicher Räume.",
-  "nachhaltigkeit_title": "Nachhaltigkeit",
-  "nachhaltigkeit_desc": "Energieeffiziente Lösungen und verantwortungsvoller Umgang mit Ressourcen."
+  "architektur_title": "Gemeinsames Bauen – gemeinschaftlich, flexibel, selbstbestimmt",
+  "architektur_desc": "WerkQuartier entsteht als Baugruppe, in der zukünftige Bewohner:innen aktiv am Planungsprozess teilnehmen. So entstehen flexible Wohn- und Arbeitsstrukturen, die sich an unterschiedliche Lebensmodelle anpassen lassen.",
+  "staedtebau_title": "Quartiersintegration – eingebettet in Dietenbachs urbane Vision",
+  "staedtebau_desc": "Das Projekt versteht sich als Teil der neuen Stadtentwicklung in Freiburg-Dietenbach. Es fördert offene Nachbarschaften, durchlässige Räume und eine enge Verbindung zum öffentlichen Stadtraum.",
+  "nachhaltigkeit_title": "Nachhaltiges Stadtwohnen – ressourcenschonend und zukunftsorientiert",
+  "nachhaltigkeit_desc": "Im Einklang mit den ökologischen Zielen Dietenbachs setzt WerkQuartier auf energieeffiziente Bauweisen, langlebige Materialien und eine reduzierte Flächen- und Ressourcenversiegelung."
 }
 ,
 "projekt": {
   "title": "Eine Vision für<br/>inspiriertes<br/>Wohnen",
-  "desc": "Willkommen im Projekt Grünwerk – wir entwickeln ein modernes Wohnquartier, das Komfort, Nachhaltigkeit und Lebensqualität vereint. Unser Fokus liegt darauf, Räume zu schaffen, die nicht nur schön sind, sondern auch ein Zuhause bieten, in dem Sie sich rundum wohlfühlen.",
-  "bau_title": "1.<br/>Bau-<br/>Abschnitt",
-  "bau_desc": "Wir sind aktuell im ersten Bauabschnitt tätig. Hier realisieren wir die ersten Wohngebäude, die modernste Architektur, energieeffiziente Technik und hochwertige Ausstattung kombinieren. Dieser Abschnitt legt den Grundstein für das gesamte Quartier und wird bereits bald fertiggestellt.",
+  "desc": "WerkQuartier bewirbt sich als Baugruppe für ein Grundstück im ersten Bauabschnitt des neuen Stadtteils Dietenbach (Frohnholz, Baulos 1). Vorgesehen ist die Entwicklung eines Mehrfamilienhauses mit etwa 12 bis 16 Eigentums-\nwohnungen. Derzeit befindet sich das Projekt in der Vorbereitungs- und Bewerbungsphase. Gemeinsam entwickeln wir die konzeptionellen Grundlagen für ein zukünftiges Wohnprojekt im neuen Stadtquartier Dietenbach.",
+  "bau_title": "1.<br/>BauAbschnitt",
+  "bau_desc": "Im Rahmen der Entwicklung des neuen Stadtquartiers Dietenbach versteht sich das Projekt als Beitrag zu einem vielfältigen und zukunftsorientierten Quartier. Im Mittelpunkt stehen eine zeitgemäße architektonische Haltung, nachhaltige Bauweisen sowie flexible und gemeinschaftsorientierte Wohnformen.",
   "alt_vision": "Projekt Vision",
   "alt_bau": "Bauabschnitt",
   "alt_plan": "Bauplan"
@@ -49,6 +65,7 @@
   "telefon": "Telefon",
   "optional": "Optional",
   "nachricht": "Nachricht",
+  "privacy_notice": "Indem Sie unten auf „Abschicken“ klicken, stimmen Sie zu, dass Werkquartier Baugruppe die oben angegebenen personenbezogenen Daten speichert und verarbeitet, um Ihr Anliegen zu bearbeiten.",
   "submit": "Abschicken",
   "mail_subject": "Kontaktanfrage von WerkQuartier Website",
   "mail_new": "Neue Kontaktanfrage:",

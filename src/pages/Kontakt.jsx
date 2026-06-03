@@ -142,6 +142,11 @@ ${formData.nachricht}
                 />
               </div>
 
+              {/* 新增：隐私提示小字，刚好在发送按钮上方，浅灰色 */}
+              <p className="text-gray-400 text-xs mb-4">
+                {t('kontakt.privacy_notice')}
+              </p>
+
               {/* 提交按钮：文本换成多语言 */}
               <button
                 type="submit"

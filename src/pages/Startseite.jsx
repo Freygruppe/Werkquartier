@@ -5,7 +5,7 @@ import heroImage from "../assets/hero.png";
 import { useTranslation } from 'react-i18next';
 
 export default function Startseite() {
-  // 新增：初始化翻译函数，你之前只引入了hook，这里补上
+  // 初始化翻译函数
   const { t } = useTranslation();
 
   return (
@@ -39,12 +39,13 @@ export default function Startseite() {
         </div>
       </section>
 
-      {/* 下面的代码和你原来的完全一样，只是把文本换成了多语言变量 */}
+      {/* 💡 核心修改区域在这里 👇 */}
       <section className="px-20 py-32">
         <h2 className="text-3xl mb-10 font-serif text-white">
           {t('start.projektidee_title')}
         </h2>
-        <p className="text-gray-300 max-w-3xl leading-relaxed text-lg">
+        {/* 加上了 whitespace-pre-wrap，完美识别 \n 且手机端自动缩进 */}
+        <p className="text-gray-300 max-w-3xl leading-relaxed text-lg whitespace-pre-wrap">
           {t('start.projektidee_desc')}
         </p>
       </section>
